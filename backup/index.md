@@ -10,13 +10,13 @@ At HydroCS Lab, I develop and apply coupled models and open tools, from parallel
 
 ## Projects
 
-- [VIC–MODFLOW 6 coupling](prototype/projects/vic-mf6-framework/): MPI-parallel two-way exchange between land-surface hydrology and groundwater models across nonmatching grids; framework development and regional validation are in progress.
-- [Upper Rio Grande](prototype/projects/upper-rio-grande/) and [CONUS coupling pilot](prototype/projects/conus-coupling/): regional and initial continental applications of the coupled framework; current analyses remain exploratory.
-- [New Mexico drought and water availability](prototype/projects/nm-drought/): coupled modeling and climate-scenario analysis documented in NMWRRI Technical Reports 412 and 413.
-- [GCN10](prototype/projects/gcn10-dataset/): a global Curve Number dataset at 10 m resolution, with separate [C/MPI processing work](prototype/projects/gcn10-mpi/).
-- [Hydraulic and flood studies](prototype/projects/hydraulic-flood/): 1D/2D modeling, satellite-map comparison, flood-risk assessment, and water-resources design.
-- [Mesilla–Conejos-Médanos aquifer](prototype/projects/mesilla-aquifer/): ParFlow–CLM model development and regional input workflows.
-- [Other project notes and figures](prototype/).
+- [VIC–MODFLOW 6 coupling](../projects/vic-mf6-framework/): MPI-parallel two-way exchange between land-surface hydrology and groundwater models across nonmatching grids; framework development and regional validation are in progress.
+- [Upper Rio Grande](../projects/upper-rio-grande/) and [CONUS coupling pilot](../projects/conus-coupling/): regional and initial continental applications of the coupled framework; current analyses remain exploratory.
+- [New Mexico drought and water availability](../projects/nm-drought/): coupled modeling and climate-scenario analysis documented in NMWRRI Technical Reports 412 and 413.
+- [GCN10](../projects/gcn10-dataset/): a global Curve Number dataset at 10 m resolution, with separate [C/MPI processing work](../projects/gcn10-mpi/).
+- [Hydraulic and flood studies](../projects/hydraulic-flood/): 1D/2D modeling, satellite-map comparison, flood-risk assessment, and water-resources design.
+- [Mesilla–Conejos-Médanos aquifer](../projects/mesilla-aquifer/): ParFlow–CLM model development and regional input workflows.
+- [Other project notes and figures](../).
 
 ## Publications & reports
 

@@ -1,4 +1,7 @@
-# mabdazzam.github.io
-Hello!  
+# Abdullah Azzam · Research profile
 
-Trying to make a personal static website which would host the projects I have done so far.
+Static GitHub Pages site for [mabdazzam.github.io](https://mabdazzam.github.io/).
+
+- `index.html`, `assets/`, and `projects/` are the current research profile.
+- `backup/` preserves the previous homepage and its assets.
+- `prototype/` redirects the former test URL to the current homepage.

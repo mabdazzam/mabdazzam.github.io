@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Muhammad Abdullah Azzam studies computational hydrology, coupled models, flood modeling, and open geospatial science.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Muhammad Abdullah Azzam</title>
+  <script>try{const t=localStorage.getItem("maa-color-theme");document.documentElement.dataset.theme=t==="light"||t==="dark"?t:(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}catch{document.documentElement.dataset.theme="light"}</script>
+  <link rel="preconnect" href="https://rsms.me">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <main class="page prose-container">
+    <header class="profile-header" id="about">
+      <h1>Muhammad Abdullah Azzam</h1>
+      <p class="role">Hydrologist · Ph.D. researcher at <a href="https://hydro.isnew.info/team/">HydroCS Lab, New Mexico State University</a></p>
+      <nav class="top-nav" aria-label="Profile links">
+        <a href="mailto:abdazzam@nmsu.edu">Email</a>
+        <a href="https://github.com/mabdazzam">GitHub</a>
+        <a href="https://scholar.google.com/citations?user=BKSsRsEAAAAJ">Google Scholar</a>
+        <a href="https://www.linkedin.com/in/mabdazzam">LinkedIn</a>
+        <a href="assets/cv.pdf">CV</a>
+      </nav>
+    </header>
+
+    <div class="content">
+      <p class="lead">I study how water moves across land, rivers, and aquifers, and how models can represent those connections at useful scales. My work brings together hydrologic modeling, scientific computing, and geospatial analysis to examine water availability, drought, and flooding.</p>
+      <p>At HydroCS Lab, I develop and apply coupled models and open tools, from parallel model workflows to regional and continental data products. Earlier, as a water-resources engineer, I worked on hydraulic and flood-risk studies in Pakistan. Across these projects, I am interested in making modeling methods both useful for water questions and practical to run.</p>
+
+      <figure class="research-figure">
+        <button class="figure-trigger image-trigger" type="button" data-lightbox data-caption="VIC–MODFLOW 6 test-model setup, showing nonmatching land-surface and groundwater grids, pumping wells, and shallow aquifer–aquitard–deep aquifer layers." aria-label="Enlarge VIC–MODFLOW 6 model setup figure">
+          <img src="assets/layered-model-setup.png" alt="Model setup panels showing land-surface and groundwater grids, cell overlap, pumping wells, and aquifer, aquitard, and deep aquifer layers" width="1593" height="1368" fetchpriority="high">
+        </button>
+        <figcaption>VIC–MODFLOW 6 test model: grid mapping and layered aquifer setup.</figcaption>
+      </figure>
+
+      <section id="projects">
+        <h2>PROJECTS</h2>
+        <p>Current work spans model development, large-scale applications, and hydraulic analysis:</p>
+        <ul>
+          <li><a href="../projects/vic-mf6-framework/"><strong>VIC–MODFLOW 6 coupling</strong></a> — An MPI-parallel framework for two-way exchange between a land-surface hydrology model and groundwater flow across nonmatching grids. I work on the coupling architecture, numerical verification, reproducibility, and regional applications. The framework and its validation are in progress.</li>
+          <li><a href="../projects/upper-rio-grande/"><strong>Upper Rio Grande</strong></a> and <a href="../projects/conus-coupling/"><strong>CONUS coupling pilot</strong></a> — Applications of the coupled framework, from a regional basin study to an initial continental-scale run. Current analyses are exploratory, with hydrologic validation continuing.</li>
+          <li><a href="../projects/nm-drought/"><strong>New Mexico drought and water availability</strong></a> — Coupled modeling and climate-scenario analysis for a statewide assessment, documented in NMWRRI Technical Reports 412 and 413.</li>
+          <li><a href="../projects/gcn10-dataset/"><strong>GCN10</strong></a> — A global Curve Number dataset at 10 m resolution for runoff modeling. The data product is accompanied by a separate <a href="../projects/gcn10-mpi/">C/MPI processing framework</a> and performance work.</li>
+          <li><a href="../projects/hydraulic-flood/"><strong>Hydraulic and flood studies</strong></a> — 1D/2D modeling of the Machar and Hamal Lake plains, compared with satellite-derived inundation maps; climate-scenario flood-risk assessment in the Indus Basin; and hydrologic and hydraulic design studies.</li>
+          <li><a href="../projects/mesilla-aquifer/"><strong>Mesilla–Conejos-Médanos aquifer</strong></a> — ParFlow–CLM model development, including regional terrain, geology, wells, and climate-forcing workflows.</li>
+          <li><a href="../projects/torrent-flood/"><strong>Large-domain flood modeling</strong></a> — Applying the TORRENT model on HPC systems and improving workflows for computationally demanding inundation simulations.</li>
+        </ul>
+        <p>Other work includes hydrologic tools for GRASS GIS and QGIS, SWAT+ watershed studies, QNSPECT evaluation, and hydrologic time-series analysis. <a href="../">Browse project notes and figures</a>.</p>
+      </section>
+
+      <section id="publications">
+        <h2>PUBLICATIONS &amp; REPORTS</h2>
+        <ul>
+          <li>Azzam, M. A., &amp; Cho, H. (2026). “GCN10: An MPI-parallelized framework for processing global Curve Number rasters for hydrologic modeling.” <em>SoftwareX, 34</em>, 102725. <a href="https://doi.org/10.1016/j.softx.2026.102725">DOI</a>.</li>
+          <li>Azzam, A., Uddin, H., &amp; Mannan, U. (2022). “Estimation of suspended sediment concentration of Keenjhar Lake through remote sensing.” <em>Engineering Proceedings, 22</em>(1), 20. <a href="https://doi.org/10.3390/engproc2022022020">DOI</a>.</li>
+          <li>Cho, H., &amp; Azzam, M. A. (2026). <a href="https://nmwrri.nmsu.edu/publications/technical-reports/tr-reports/tr-412.html">Development of a computational framework for statewide coupled surface water and groundwater modeling</a>. NMWRRI Technical Completion Report 412.</li>
+          <li>Cho, H., &amp; Azzam, M. A. (2026). <a href="https://nmwrri.nmsu.edu/publications/technical-reports/tr-reports/tr-413.html">New Mexico statewide drought vulnerability analysis under future climate change scenarios</a>. NMWRRI Technical Completion Report 413.</li>
+        </ul>
+        <p>Manuscripts in preparation include the VIC–MODFLOW 6 coupling framework and the GCN10 dataset.</p>
+      </section>
+
+      <section id="talks">
+        <h2>TALKS &amp; COMMUNITY</h2>
+        <ul>
+          <li>UCOWR/NIWR Annual Water Resources Conference (2026); New Mexico Water Conference and AWRA Spring Conference (2025); AGU Annual Meeting (2024).</li>
+          <li><a href="https://grass.osgeo.org/news/2025_05_27_grass_dev_summit_report/">GRASS Developer Summit 2025</a>, North Carolina State University — participant and contributor to the open-source GIS community.</li>
+        </ul>
+      </section>
+
+      <section id="experience">
+        <h2>EXPERIENCE</h2>
+        <ul>
+          <li><strong>Graduate Intern, Lawrence Livermore National Laboratory</strong> (2026) — Benchmarking storage, I/O, compression, and distributed data workflows on CPU and GPU/APU systems.</li>
+          <li><strong>Research Assistant, HydroCS Lab, New Mexico State University</strong> (2024–present) — Computational hydrology, model coupling, geospatial software, and regional water studies.</li>
+          <li><strong>Water Resources Engineer, Techno-Consult International</strong> (2021–2023) — Hydrologic and hydraulic modeling, flood-risk assessment, drainage, sediment, and water-supply studies.</li>
+        </ul>
+        <p><strong>Education:</strong> Ph.D. in Civil Engineering, New Mexico State University (expected 2027); M.C.E. (2023) and B.E. (2019), NED University of Engineering &amp; Technology.</p>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <p><a href="assets/cv.pdf">Curriculum vitae</a> · <a href="https://github.com/mabdazzam">GitHub</a> · <a href="mailto:abdazzam@nmsu.edu">Email</a></p>
+      <p>Las Cruces, New Mexico · © 2020–2026 Muhammad Abdullah Azzam</p>
+    </footer>
+  </main>
+  <script src="assets/site.js" defer></script>
+</body>
+</html>
