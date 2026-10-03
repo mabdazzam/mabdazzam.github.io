@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Research, software, and studies in computational hydrology by Muhammad Abdullah Azzam.">
+  <meta name="theme-color" content="#f5f5f0">
+  <title>Muhammad Abdullah Azzam · Computational Hydrology</title>
+  <script>try{const t=localStorage.getItem("maa-color-theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch{}</script><link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <div class="shell">
+    <header class="site-top">
+      <a class="brand" href="./" aria-label="Muhammad Abdullah Azzam, home"><span class="brand-mark">MAA</span><span class="brand-label">Muhammad Abdullah Azzam</span></a>
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#software">Software</a>
+        <a class="nav-cv" href="assets/cv.pdf">CV <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> Computational hydrology · Open geospatial science</p>
+          <h1 id="page-title" class="hero-tagline">Modeling water where land and groundwater meet.</h1>
+          <p class="hero-intro">I develop coupled hydrologic models and open geospatial tools for water availability, drought, runoff, and groundwater research.</p>
+          <p class="hero-role">PhD researcher <span>·</span> <a href="https://hydro.isnew.info/team/">HydroCS Lab, New Mexico State University</a></p>
+          <div class="hero-links">
+            <a class="button-link" href="#research">Explore my research <span aria-hidden="true">↓</span></a>
+            <a class="quiet-link" href="mailto:abdazzam@nmsu.edu">Contact <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <figure class="hero-figure hero-research-figure">
+          <button class="image-trigger hero-image-trigger" type="button" data-lightbox data-caption="VIC–MODFLOW 6 layered model setup · nonmatching land and groundwater grids, four pumping cells, and the shallow aquifer–aquitard–deep aquifer structure" aria-label="Enlarge layered aquitard model setup figure">
+            <img loading="eager" fetchpriority="high" decoding="async" src="projects/vic-mf6-framework/assets/layered-model-setup.png" alt="Four-panel model setup showing VIC and groundwater grids, cell overlap areas, four pumping wells, and the shallow aquifer, aquitard, and deep aquifer layers">
+          </button>
+          <figcaption><span>VIC–MODFLOW 6</span><span>Layered aquifer and aquitard model setup</span></figcaption>
+        </figure>
+        <div class="hero-index" aria-hidden="true"><span>01</span><span>RESEARCH PROFILE</span><span>LAS CRUCES, NM</span></div>
+      </section>
+
+      <section class="research-section section" id="research">
+        <div class="section-heading">
+          <p class="eyebrow">01 / Selected projects</p>
+          <h2>Methods, data, and applications</h2>
+          <p class="section-deck">I work across computational hydrology: developing model-coupling methods, building open geospatial software, and applying both to regional water questions.</p>
+        </div>
+        <div class="study-list">
+          <a class="study-row" href="projects/vic-mf6-framework/">
+            <span class="study-no">01</span><span class="study-main"><strong>VIC–MODFLOW 6 coupling framework</strong><small>Two-way surface-water and groundwater modeling across nonmatching grids</small></span><span class="study-status">FRAMEWORK · IN DEVELOPMENT</span><span class="row-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="study-row" href="projects/gcn10-dataset/">
+            <span class="study-no">02</span><span class="study-main"><strong>GCN10 global 10 m Curve Number dataset</strong><small>High-resolution runoff data, with a separate MPI processing contribution</small></span><span class="study-status">DATASET · RELEASED</span><span class="row-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="study-row" href="projects/mesilla-aquifer/">
+            <span class="study-no">03</span><span class="study-main"><strong>Mesilla–Conejos-Médanos aquifer modeling</strong><small>ParFlow–CLM setup and reproducible regional input workflows</small></span><span class="study-status">APPLICATION · ONGOING</span><span class="row-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="study-row" href="projects/grass-qgis-tools/">
+            <span class="study-no">04</span><span class="study-main"><strong>Hydrologic software for GRASS GIS and QGIS</strong><small>Open tools for Curve Number, runoff, travel time, and roughness workflows</small></span><span class="study-status">SOFTWARE · OPEN SOURCE</span><span class="row-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <div class="active-applications">
+          <p class="group-label">Active applications and studies</p>
+          <div class="application-links">
+            <a href="projects/upper-rio-grande/">Upper Rio Grande <span>Regional coupling study · exploratory analysis</span></a>
+            <a href="projects/conus-coupling/">CONUS coupling pilot <span>First national-scale run · early application</span></a>
+            <a href="projects/nm-drought/">New Mexico drought vulnerability <span>Statewide coupled modeling · technical reports</span></a>
+          </div>
+        </div>
+        <p class="honesty-note"><span class="note-mark">↳</span> The VIC–MF6 framework and the Rio Grande and CONUS applications are works in progress. Their pages label exploratory results and describe what remains to be validated.</p>
+      </section>
+
+      <section class="areas-section section" aria-labelledby="areas-title">
+        <div class="section-heading">
+          <p class="eyebrow">Research areas</p>
+          <h2 id="areas-title">Methods shaped by water questions</h2>
+        </div>
+        <div class="areas-grid">
+          <article class="area-item"><span>01</span><h3>Computational hydrology</h3><p>Process-based modeling from watersheds to regional domains.</p></article>
+          <article class="area-item"><span>02</span><h3>Surface–groundwater coupling</h3><p>Exchange between land-surface and groundwater systems.</p></article>
+          <article class="area-item"><span>03</span><h3>Drought &amp; water availability</h3><p>Climate-driven water storage, vulnerability, and supply.</p></article>
+          <article class="area-item"><span>04</span><h3>Scientific computing</h3><p>MPI, high-performance computing, and scalable geospatial processing.</p></article>
+          <article class="area-item"><span>05</span><h3>Open geospatial science</h3><p>GRASS GIS, QGIS, remote sensing, and reusable hydrology tools.</p></article>
+        </div>
+      </section>
+
+      <section class="visual-section section" aria-labelledby="visual-title">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">02 / Field notes in figures</p>
+          <h2 id="visual-title">Models, data, and scale</h2>
+        </div>
+        <div class="visual-grid">
+          <figure class="visual-item visual-large">
+            <span class="visual-image"><button class="image-trigger visual-trigger" type="button" data-lightbox data-caption="VIC–MODFLOW 6 · conceptual overview of two-way coupling across nonmatching grids" aria-label="Enlarge VIC–MODFLOW 6 coupling diagram"><img loading="lazy" decoding="async" src="projects/vic-mf6-framework/assets/coupling-overview.png" alt="Diagram showing two-way coupling between VIC and MODFLOW 6"></button></span>
+            <figcaption class="visual-caption"><a href="projects/vic-mf6-framework/"><span><strong>A coupled model for connected water</strong><small>VIC–MODFLOW 6 framework</small></span></a><span class="visual-arrow" aria-hidden="true">↗</span></figcaption>
+          </figure>
+          <figure class="visual-item">
+            <span class="visual-image"><button class="image-trigger visual-trigger" type="button" data-lightbox data-caption="GCN10 dataset · comparison of spatial detail in the GCN250 and GCN10 Curve Number products" aria-label="Enlarge GCN10 resolution comparison"><img loading="lazy" decoding="async" src="projects/gcn10-dataset/assets/resolution-detail.png" alt="Spatial-detail comparison of GCN250 and GCN10 Curve Number products"></button></span>
+            <figcaption class="visual-caption"><a href="projects/gcn10-dataset/"><span><strong>Global Curve Number data at 10 m</strong><small>GCN10 dataset · a distinct research result</small></span></a><span class="visual-arrow" aria-hidden="true">↗</span></figcaption>
+          </figure>
+          <figure class="visual-item">
+            <span class="visual-image visual-image-tall"><button class="image-trigger visual-trigger" type="button" data-lightbox data-caption="GCN10 MPI framework · parallel speedup and efficiency measurements" aria-label="Enlarge GCN10 MPI scaling figure"><img loading="lazy" decoding="async" src="projects/gcn10-mpi/assets/mpi-scaling.png" alt="MPI parallel speedup and efficiency results for GCN10 processing"></button></span>
+            <figcaption class="visual-caption"><a href="projects/gcn10-mpi/"><span><strong>Scaling high-resolution raster processing</strong><small>GCN10 MPI framework · SoftwareX, 2026</small></span></a><span class="visual-arrow" aria-hidden="true">↗</span></figcaption>
+          </figure>
+          <figure class="visual-item">
+            <span class="visual-image"><button class="image-trigger visual-trigger" type="button" data-lightbox data-caption="CONUS coupled-model pilot · groundwater fields and changes for January 2010" aria-label="Enlarge CONUS January 2010 map"><img loading="lazy" decoding="async" src="projects/conus-coupling/assets/groundwater-january-2010.png" alt="Groundwater conditions and changes from a one-month CONUS coupling pilot"></button></span>
+            <figcaption class="visual-caption"><a href="projects/conus-coupling/"><span><strong>A first national-scale coupling run</strong><small>CONUS pilot · run details</small></span></a><span class="visual-arrow" aria-hidden="true">↗</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="software-section section" id="software">
+        <div class="section-heading">
+          <p class="eyebrow">03 / Open tools &amp; data</p>
+          <h2>Research that others can use</h2>
+        </div>
+        <div class="software-grid">
+          <a class="software-item" href="projects/gcn10-dataset/"><span class="software-icon">▦</span><span><strong>GCN10 global dataset</strong><small>10 m Curve Number data for runoff modeling</small></span><span class="row-arrow">↗</span></a>
+          <a class="software-item" href="projects/gcn10-mpi/"><span class="software-icon">⌘</span><span><strong>GCN10 MPI processing</strong><small>Parallel C framework and Python interface</small></span><span class="row-arrow">↗</span></a>
+          <a class="software-item" href="projects/grass-qgis-tools/"><span class="software-icon">⌖</span><span><strong>GRASS GIS &amp; QGIS hydrology</strong><small>Runoff, Curve Number, and roughness tools</small></span><span class="row-arrow">↗</span></a>
+          <a class="software-item" href="projects/waveflow/"><span class="software-icon">∿</span><span><strong>WaveFlow</strong><small>Frequency analysis for hydrologic time series</small></span><span class="row-arrow">↗</span></a>
+        </div>
+      </section>
+
+      <section class="publication-section section" id="publications">
+        <div class="section-heading">
+          <p class="eyebrow">04 / Scholarship</p>
+          <h2>Published work &amp; what is underway</h2>
+        </div>
+        <div class="publication-columns">
+          <div class="publication-group">
+            <p class="group-label">Peer-reviewed publications</p>
+            <ol class="publication-list">
+              <li><strong>GCN10: An MPI-parallelized framework for processing global Curve Number rasters for hydrologic modeling.</strong><span>SoftwareX, 34, 102725 · 2026</span><a href="https://doi.org/10.1016/j.softx.2026.102725">Paper <span aria-hidden="true">↗</span></a></li>
+              <li><strong>Estimation of suspended sediment concentration of Keenjhar Lake through remote sensing.</strong><span>Engineering Proceedings, 22(1), 20 · 2022</span><a href="https://doi.org/10.3390/engproc2022022020">Paper <span aria-hidden="true">↗</span></a></li>
+            </ol>
+          </div>
+          <div class="publication-group">
+            <p class="group-label">Manuscripts in preparation &amp; active studies</p>
+            <ul class="manuscript-list">
+              <li><a href="projects/vic-mf6-framework/">MPI-parallel two-way VIC–MODFLOW 6 coupling</a><span>Framework development and verification underway</span></li>
+              <li><a href="projects/gcn10-dataset/">GCN10 global 10 m Curve Number dataset</a><span>Dataset manuscript in preparation; data are available</span></li>
+              <li><a href="projects/upper-rio-grande/">Upper Rio Grande groundwater and drought assessment</a><span>Regional study underway; current results are exploratory</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="selected-section section" id="selected-work">
+        <div class="section-heading">
+          <p class="eyebrow">05 / Beyond the main thread</p>
+          <h2>Selected work &amp; community</h2>
+        </div>
+        <div class="selected-columns">
+          <ul class="plain-list">
+            <li><a href="projects/nm-drought/">New Mexico statewide drought vulnerability</a><span>NMWRRI technical reports 412 &amp; 413 · 2026</span></li>
+            <li><a href="projects/torrent-flood/">TORRENT flood modeling on HPC systems</a><span>Large-domain inundation modeling</span></li>
+            <li><a href="projects/dises-watersheds/">Agricultural watershed water availability</a><span>NSF DISES-related SWAT+ research</span></li>
+            <li><a href="projects/qnspect/">QNSPECT evaluation and improvement</a><span>Master's thesis · sediment and nonpoint-source pollution</span></li>
+          </ul>
+          <ul class="plain-list">
+            <li><a href="projects/swat-comparison/">SWAT and SWAT+ comparison</a><span>ASABE Annual International Meeting · 2023</span></li>
+            <li><a href="https://grass.osgeo.org/news/2025_05_27_grass_dev_summit_report/">GRASS Developer Summit 2025</a><span>Participant · North Carolina State University</span></li>
+            <li><a href="https://scholar.google.com/citations?user=BKSsRsEAAAAJ">Google Scholar</a><span>Publications and citations ↗</span></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="footer-name" href="./">Muhammad Abdullah Azzam</a>
+      <span>HydroCS Lab, NMSU · Las Cruces, New Mexico<br><small class="footer-updated">Updated 3 October 2026</small></span>
+      <div class="footer-links"><a href="mailto:abdazzam@nmsu.edu">Email</a><a href="https://github.com/mabdazzam">GitHub</a><a href="https://www.linkedin.com/in/mabdazzam">LinkedIn</a><a href="assets/cv.pdf">CV</a></div>
+    </footer>
+  </div>
+  <script src="assets/site.js" defer></script>
+</body>
+</html>
