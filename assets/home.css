@@ -80,7 +80,7 @@
 .home-redesign .text-link span { transition: transform .2s ease; }
 .home-redesign .text-link:hover span { transform: translate(2px,-2px); }
 
-.new-hero { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1.03fr); gap: 5%; align-items: center; min-height: 650px; padding: 75px 0 85px; }
+.new-hero { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,.92fr); gap: 8%; align-items: center; min-height: 615px; padding: 75px 0 85px; }
 .hero-main { padding-bottom: 11px; }
 .hero-name {
   margin: 27px 0 0; color: var(--home-ink);
@@ -97,6 +97,11 @@
 .hero-meta span + span::before { content: "·"; margin-right: 17px; color: var(--home-accent); }
 .hero-meta a { border-bottom: 1px solid var(--home-line); }
 .hero-cta { margin-top: 37px; }
+.hero-about { min-width: 0; padding: 31px 0 13px; border-top: 1px solid var(--home-line); scroll-margin-top: 35px; }
+.hero-about h2 { max-width: 520px; margin: 27px 0 24px; font-size: clamp(39px,3.8vw,56px); line-height: 1.08; }
+.hero-about > p:not(.kicker) { max-width: 520px; margin: 0 0 17px; color: var(--home-copy); font-size: 16px; line-height: 1.72; }
+.hero-about > p a { border-bottom: 1px solid var(--home-accent); color: var(--home-ink); }
+.hero-about .about-links { margin-top: 30px; }
 .hero-art { margin: 0; min-width: 0; background: var(--home-card); border: 1px solid var(--home-line); }
 .hero-art .image-trigger { display: grid; width: 100%; height: clamp(350px,42vw,510px); padding: 22px; place-items: center; }
 .hero-art img { display: block; width: 100%; max-height: 100%; object-fit: contain; background: #fff; }
@@ -210,6 +215,7 @@
   .home-redesign .site-top { min-height: 75px; }
   .new-hero { grid-template-columns: 1fr; gap: 45px; min-height: 0; padding: 63px 0 83px; }
   .new-hero h1 { font-size: clamp(65px,10vw,92px); }
+  .hero-about { max-width: 610px; }
   .hero-art .image-trigger { height: 430px; }
   .work-intro-grid, .data-heading, .about-section { grid-template-columns: 1fr; gap: 20px; }
   .work-intro { padding-bottom: 25px; }
@@ -241,6 +247,9 @@
   .hero-name { margin-top: 23px; font-size: 31px; }
   .new-hero h1 { margin: 12px 0 24px; font-size: clamp(56px,12.4vw,73px); }
   .new-hero .lead { font-size: 19px; }
+  .hero-about { padding-top: 26px; }
+  .hero-about h2 { font-size: clamp(39px,9vw,49px); }
+  .hero-about > p:not(.kicker) { font-size: 15px; }
   .hero-meta { flex-direction: column; gap: 3px; }
   .hero-meta span + span::before { content: none; }
   .hero-art .image-trigger { height: 310px; padding: 10px; }
