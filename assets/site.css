@@ -2,42 +2,43 @@
 
 :root {
   color-scheme: light;
-  --paper: #f6f6f2;
+  --crimson: #8C0B42;
+  --paper: #faf9f7;
   --white: #fff;
-  --ink: #182b2b;
-  --muted: #64736e;
-  --soft: #eeefe9;
-  --line: #d5dbd4;
-  --teal: #296956;
-  --teal-deep: #245d4c;
-  --clay: #bd7154;
-  --copy: #425451;
-  --hover-row: rgba(255,255,255,.58);
-  --visual-surface: #e6ebe5;
+  --ink: #282127;
+  --muted: #71666d;
+  --soft: #f3edf0;
+  --line: #dfd5da;
+  --teal: var(--crimson);
+  --teal-deep: var(--crimson);
+  --clay: var(--crimson);
+  --copy: #4d4148;
+  --hover-row: rgba(140,11,66,.035);
+  --visual-surface: #f3edf0;
   --image-surface: #fff;
-  --modal-surface: #f7f8f4;
-  --backdrop: rgba(13,29,29,.88);
+  --modal-surface: #faf9f7;
+  --backdrop: rgba(28,15,23,.88);
   --serif: "Newsreader", "Iowan Old Style", Georgia, serif;
   --sans: "DM Sans", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --paper: #111b1a;
+  --paper: #191418;
   --white: #fff;
-  --ink: #e5ece7;
-  --muted: #a5b5ae;
-  --soft: #1a2926;
-  --line: #354741;
-  --teal: #83c9b8;
-  --teal-deep: #a1d9ca;
-  --clay: #e3a080;
-  --copy: #c3d0ca;
-  --hover-row: rgba(255,255,255,.045);
-  --visual-surface: #1d2c29;
+  --ink: #f5edf1;
+  --muted: #c5b6bf;
+  --soft: #281e24;
+  --line: #49343f;
+  --teal: var(--crimson);
+  --teal-deep: var(--ink);
+  --clay: var(--crimson);
+  --copy: #e0d2d9;
+  --hover-row: rgba(140,11,66,.16);
+  --visual-surface: #281e24;
   --image-surface: #f8f8f5;
-  --modal-surface: #172321;
-  --backdrop: rgba(2,10,9,.88);
+  --modal-surface: #21191e;
+  --backdrop: rgba(8,3,6,.9);
 }
 
 * { box-sizing: border-box; }
@@ -63,7 +64,7 @@ img { max-width: 100%; }
 .theme-icon { color: var(--clay); font-size: 16.74px; }
 
 .hero { position: relative; display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; gap: 42px; min-height: 480px; margin: 30px 0 0; padding: 56px 52px 76px; overflow: hidden; background: var(--soft); }
-.hero::before { position: absolute; top: -172px; left: -136px; width: 340px; height: 340px; border: 1px solid rgba(39,115,108,.12); border-radius: 50%; content: ""; box-shadow: 0 0 0 32px rgba(39,115,108,.025), 0 0 0 64px rgba(39,115,108,.025); }
+.hero::before { position: absolute; top: -172px; left: -136px; width: 340px; height: 340px; border: 1px solid rgba(140,11,66,.12); border-radius: 50%; content: ""; box-shadow: 0 0 0 32px rgba(140,11,66,.025), 0 0 0 64px rgba(140,11,66,.025); }
 .hero-copy { position: relative; z-index: 1; max-width: 510px; }
 .eyebrow { margin: 0 0 15px; color: var(--teal); font-size: 12.276px; font-weight: 650; letter-spacing: .15em; line-height: 1.5; text-transform: uppercase; }
 .eyebrow-dot { display: inline-block; width: 7px; height: 7px; margin: 0 8px 1px 0; border-radius: 50%; background: var(--clay); }
@@ -79,8 +80,8 @@ img { max-width: 100%; }
 .button-link:hover { transform: translateY(-2px); background: var(--teal); color: white; }
 .quiet-link { color: var(--teal-deep); }
 .quiet-link span { margin-left: 4px; color: var(--clay); }
-.hero-figure { position: relative; z-index: 1; min-width: 0; height: 335px; margin: 0; overflow: hidden; background: var(--visual-surface); box-shadow: 15px 15px 0 rgba(29,48,47,.08); }
-.hero-figure::after { position: absolute; inset: 35% 0 0; background: linear-gradient(transparent, rgba(11,34,35,.72)); content: ""; pointer-events: none; }
+.hero-figure { position: relative; z-index: 1; min-width: 0; height: 335px; margin: 0; overflow: hidden; background: var(--visual-surface); box-shadow: 15px 15px 0 rgba(63,15,37,.08); }
+.hero-figure::after { position: absolute; inset: 35% 0 0; background: linear-gradient(transparent, rgba(30,8,18,.72)); content: ""; pointer-events: none; }
 .hero-figure img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
 .image-trigger { display: block; padding: 0; border: 0; background: transparent; color: inherit; cursor: zoom-in; }
 .image-trigger:focus-visible { outline: 3px solid var(--clay); outline-offset: -3px; }
@@ -252,6 +253,16 @@ img { max-width: 100%; }
 .lightbox-figure img { display: block; width: auto; max-width: 100%; height: auto; max-height: calc(88vh - 72px); margin: 0 auto; object-fit: contain; }
 .lightbox-figure figcaption { max-width: 900px; margin: 12px auto 0; color: var(--muted); font-size: 14.508px; line-height: 1.55; }
 
+:root[data-theme="dark"] a:hover { color: var(--ink); text-decoration: underline; text-decoration-color: var(--crimson); text-underline-offset: 3px; }
+:root[data-theme="dark"] .page { border-top: 2px solid var(--crimson); }
+:root[data-theme="dark"] .back { border-bottom: 1px solid var(--crimson); }
+:root[data-theme="dark"] .project-status { padding-left: 10px; border-left: 3px solid var(--crimson); color: var(--ink); }
+:root[data-theme="dark"] .resource-list li::marker { color: var(--crimson); }
+:root[data-theme="dark"] .theme-icon { color: var(--ink); }
+:root[data-theme="dark"] a:focus-visible,
+:root[data-theme="dark"] .image-trigger:focus-visible,
+:root[data-theme="dark"] .theme-toggle:focus-visible { outline-color: var(--ink); }
+
 @media (max-width: 760px) {
   .shell { width: min(100% - 38px, 620px); }
   .site-top { min-height: 68px; }
@@ -321,11 +332,11 @@ img { max-width: 100%; }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme]) {
     color-scheme: dark;
-    --paper: #111b1a; --white: #fff; --ink: #e5ece7; --muted: #a5b5ae;
-    --soft: #1a2926; --line: #354741; --teal: #83c9b8; --teal-deep: #a1d9ca;
-    --clay: #e3a080; --copy: #c3d0ca; --hover-row: rgba(255,255,255,.045);
-    --visual-surface: #1d2c29;
-    --image-surface: #f8f8f5; --modal-surface: #172321; --backdrop: rgba(2,10,9,.88);
+    --paper: #191418; --white: #fff; --ink: #f5edf1; --muted: #c5b6bf;
+    --soft: #281e24; --line: #49343f; --teal: var(--crimson); --teal-deep: var(--ink);
+    --clay: var(--crimson); --copy: #e0d2d9; --hover-row: rgba(140,11,66,.16);
+    --visual-surface: #281e24;
+    --image-surface: #f8f8f5; --modal-surface: #21191e; --backdrop: rgba(8,3,6,.9);
   }
 }
 
