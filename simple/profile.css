@@ -186,16 +186,20 @@
   .intro::after { top: 5px; right: -12px; width: min(43%, 270px); height: 250px; opacity: .17; }
   .intro h1 { font-size: 44px; }
   .affiliations { grid-template-columns: 1fr; }
-  .affiliation-card { display: grid; grid-template-columns: 130px minmax(0,1fr); align-items: center; gap: 18px; padding: 14px 0; }
+  .affiliation-card { display: grid; grid-template-columns: 118px minmax(0,1fr); align-items: center; gap: 24px; padding: 18px 0; }
   .affiliation-card + .affiliation-card { padding: 14px 0; border-top: 1px solid var(--line); border-left: 0; }
-  .affiliation-logo { height: 70px; }
+  .affiliation-logo { width: 100%; height: 68px; justify-content: flex-start; }
+  .affiliation-logo img { width: 100%; max-width: 112px !important; height: 58px; max-height: 58px !important; object-fit: contain; object-position: left center; }
+  .affiliation-copy { min-width: 0; }
   .project-row h3 { font-size: 24px; }
   .project-row { grid-template-columns: minmax(0, 1fr) 205px; gap: 20px; }
   .project-image-trigger { height: 138px; }
   .project-row-featured { grid-template-columns: minmax(0,1fr); gap: 18px; }
   .project-row-featured .project-image-trigger { height: 185px; }
-  .research-pathway ol { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 14px; }
-  .research-pathway li:not(:last-child)::after { display: none; }
+  .research-pathway ol { display: grid; grid-template-columns: 1fr; gap: 0; }
+  .research-pathway li { position: relative; display: block; min-height: 31px; padding: 1px 0 11px 22px; white-space: normal; }
+  .research-pathway li::before { position: absolute; top: .48em; left: 1px; margin: 0; }
+  .research-pathway li:not(:last-child)::after { position: absolute; top: 15px; bottom: 0; left: 3px; width: 1px; height: auto; margin: 0; background: var(--line); }
 }
 @media (max-width: 520px) {
   .profile-shell { width: min(100% - 32px, 450px); }
@@ -216,9 +220,9 @@
   .project-image-trigger { height: clamp(180px, 56vw, 245px); }
   .project-image-trigger::after { right: 7px; bottom: 7px; opacity: .96; transform: none; }
   .project-figure figcaption { text-align: left; }
-  .affiliation-card { grid-template-columns: 124px minmax(0,1fr); gap: 15px; }
-  .affiliation-logo { height: 64px; }
-  .affiliation-logo img { max-width: 118px !important; max-height: 58px !important; }
+  .affiliation-card { grid-template-columns: 104px minmax(0,1fr); gap: 22px; }
+  .affiliation-logo { height: 62px; }
+  .affiliation-logo img { max-width: 100px !important; height: 54px; max-height: 54px !important; }
   .outputs li { grid-template-columns: 1fr; gap: 5px; }
 }
 @media (prefers-reduced-motion: reduce) {
