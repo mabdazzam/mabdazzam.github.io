@@ -38,6 +38,58 @@ document.addEventListener("DOMContentLoaded", () => {
     try { localStorage.setItem(themeKey, theme); } catch { /* Theme still works for this page. */ }
   });
 
+  if (document.body.classList.contains("academic-profile")) {
+    const progress = document.querySelector(".reading-progress");
+    const siteHeader = document.querySelector(".site-header");
+    const sectionLinks = [...document.querySelectorAll('.top-nav a[href^="#"]')]
+      .map((link) => ({ link, section: document.querySelector(link.getAttribute("href")) }))
+      .filter(({ section }) => section);
+
+    let updateQueued = false;
+    const updateReadingPosition = () => {
+      if (updateQueued) return;
+      updateQueued = true;
+      requestAnimationFrame(() => {
+        updateQueued = false;
+        const doc = document.documentElement;
+        const scrollRange = doc.scrollHeight - window.innerHeight;
+        const progressRatio = scrollRange > 0 ? Math.min(1, Math.max(0, window.scrollY / scrollRange)) : 0;
+        if (progress) progress.style.transform = `scaleX(${progressRatio})`;
+        if (siteHeader) siteHeader.classList.toggle("is-scrolled", window.scrollY > 28);
+
+        const activationLine = Math.min(150, window.innerHeight * .28);
+        let active = null;
+        sectionLinks.forEach(({ link, section }) => {
+          if (section.getBoundingClientRect().top <= activationLine) active = link;
+        });
+        sectionLinks.forEach(({ link }) => {
+          if (link === active) link.setAttribute("aria-current", "location");
+          else link.removeAttribute("aria-current");
+        });
+      });
+    };
+    window.addEventListener("scroll", updateReadingPosition, { passive: true });
+    window.addEventListener("resize", updateReadingPosition);
+    updateReadingPosition();
+
+    const filters = [...document.querySelectorAll("[data-project-filter]")];
+    const projects = [...document.querySelectorAll(".project-row[data-project-groups]")];
+    if (filters.length && projects.length) {
+      document.body.classList.add("filters-ready");
+      filters.forEach((filterButton) => {
+        filterButton.addEventListener("click", () => {
+          const selected = filterButton.dataset.projectFilter;
+          filters.forEach((button) => button.setAttribute("aria-pressed", String(button === filterButton)));
+          projects.forEach((project) => {
+            const groups = project.dataset.projectGroups.split(/\s+/);
+            project.hidden = selected !== "all" && !groups.includes(selected);
+          });
+          updateReadingPosition();
+        });
+      });
+    }
+  }
+
   const triggers = document.querySelectorAll("[data-lightbox]");
   if (!triggers.length || typeof HTMLDialogElement === "undefined") return;
 
