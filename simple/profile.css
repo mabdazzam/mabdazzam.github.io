@@ -186,11 +186,11 @@
   .intro::after { top: 5px; right: -12px; width: min(43%, 270px); height: 250px; opacity: .17; }
   .intro h1 { font-size: 44px; }
   .affiliations { grid-template-columns: 1fr; }
-  .affiliation-card { display: grid; grid-template-columns: 118px minmax(0,1fr); align-items: center; gap: 24px; padding: 18px 0; }
+  .affiliation-card { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; padding: 18px 0; }
   .affiliation-card + .affiliation-card { padding: 14px 0; border-top: 1px solid var(--line); border-left: 0; }
-  .affiliation-logo { width: 100%; height: 68px; justify-content: flex-start; }
-  .affiliation-logo img { width: 100%; max-width: 112px !important; height: 58px; max-height: 58px !important; object-fit: contain; object-position: left center; }
-  .affiliation-copy { min-width: 0; }
+  .affiliation-logo { width: auto; max-width: 100%; height: 54px; justify-content: flex-start; }
+  .affiliation-logo img { width: auto !important; max-width: min(100%, 180px) !important; height: 50px; max-height: 50px !important; object-fit: contain; object-position: left center; }
+  .affiliation-copy { width: 100%; min-width: 0; }
   .project-row h3 { font-size: 24px; }
   .project-row { grid-template-columns: minmax(0, 1fr) 205px; gap: 20px; }
   .project-image-trigger { height: 138px; }
@@ -220,9 +220,6 @@
   .project-image-trigger { height: clamp(180px, 56vw, 245px); }
   .project-image-trigger::after { right: 7px; bottom: 7px; opacity: .96; transform: none; }
   .project-figure figcaption { text-align: left; }
-  .affiliation-card { grid-template-columns: 104px minmax(0,1fr); gap: 22px; }
-  .affiliation-logo { height: 62px; }
-  .affiliation-logo img { max-width: 100px !important; height: 54px; max-height: 54px !important; }
   .outputs li { grid-template-columns: 1fr; gap: 5px; }
 }
 @media (prefers-reduced-motion: reduce) {
