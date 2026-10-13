@@ -3,7 +3,7 @@
 :root {
   color-scheme: light;
   --crimson: #8C0B42;
-  --paper: #F5F4EE;
+  --paper: #F3F0E8;
   --white: #fff;
   --ink: #282127;
   --muted: #71666d;
@@ -16,7 +16,7 @@
   --hover-row: rgba(140,11,66,.035);
   --visual-surface: #f3edf0;
   --image-surface: #fff;
-  --modal-surface: #F5F4EE;
+  --modal-surface: #F3F0E8;
   --backdrop: rgba(28,15,23,.88);
   --serif: "Newsreader", "Iowan Old Style", Georgia, serif;
   --sans: "DM Sans", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;

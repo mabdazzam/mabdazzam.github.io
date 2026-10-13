@@ -2,7 +2,7 @@
 
 :root {
   --crimson: #8C0B42;
-  --paper: #F5F4EE;
+  --paper: #F3F0E8;
   --ink: #282127;
   --muted: #71666d;
   --soft: #f3edf0;
@@ -13,7 +13,7 @@
   --copy: #4d4148;
   --hover-row: rgba(140, 11, 66, .035);
   --visual-surface: #f3edf0;
-  --modal-surface: #F5F4EE;
+  --modal-surface: #F3F0E8;
   --backdrop: rgba(28, 15, 23, .88);
 }
 :root[data-theme="dark"] {
